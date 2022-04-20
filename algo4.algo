@@ -6,7 +6,7 @@ BEGIN
         Read(t[i]);
     END_FOR
 END
-ALGORITHM algorithm_name
+ALGORITHM insertion_sort
 VAR
     n,i,temp,j:INTEGER;
     arr: ARRAY_OF INTEGER[n];
