@@ -1,0 +1,26 @@
+PROCEDURE fill_tab(n,t)
+VAR
+    i:INTEGER;
+BEGIN
+    FOR i FROM O TO n-1 DO
+        Read(t[i]);
+    END_FOR
+END
+ALGORITHM algorithm_name
+VAR
+    n,i,temp,j:INTEGER;
+    arr: ARRAY_OF INTEGER[n];
+BEGIN
+    Write('Enter the array length please');
+    Read(n);
+    fill_tab(n,arr);
+    FOR i FROM 1 TO n-1 DO
+        temp:=arr[i];
+        j:=i-1;
+        WHILE (j>=0 and arr[j]>temp) DO
+            arr[j+1]:=arr[j];
+            arr[j]:=temp;
+            j--;
+        END_WHILE
+    END_FOR
+END
