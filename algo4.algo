@@ -20,7 +20,7 @@ BEGIN
         WHILE (j>=0 and arr[j]>temp) DO
             arr[j+1]:=arr[j];
             j:=j-1;
-            arr[j]:=temp;
         END_WHILE
+        arr[j]:=temp; 
     END_FOR
 END
