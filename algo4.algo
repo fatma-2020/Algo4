@@ -19,8 +19,8 @@ BEGIN
         j:=i-1;
         WHILE (j>=0 and arr[j]>temp) DO
             arr[j+1]:=arr[j];
-            arr[j]:=temp;
             j:=j-1;
+            arr[j]:=temp;
         END_WHILE
     END_FOR
 END
